@@ -11,8 +11,13 @@ CREATE TABLE subcategory(
 CREATE TABLE contacts(
 	contact_id int PRIMARY KEY,
 	first_name VARCHAR(200) NOT NULL,
-	last_name VARCHAR(200) NOT NULL
+	last_name VARCHAR(200) NOT NULL,
 );
+
+ALTER TABLE contacts
+ADD COLUMN email VARCHAR(200) NOT NULL;
+
+SELECT * FROM contacts 
 
 CREATE TABLE campaign(
 	cf_id int PRIMARY KEY,
