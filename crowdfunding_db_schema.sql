@@ -35,3 +35,8 @@ CREATE TABLE campaign(
 	category_id VARCHAR(10) REFERENCES category(category_id),
 	subcategory_id VARCHAR(10) REFERENCES subcategory(subcategory_id)
 )
+
+SELECT * FROM category;
+SELECT * FROM subcategory;
+SELECT * FROM contacts;
+SELECT * FROM campaign;
